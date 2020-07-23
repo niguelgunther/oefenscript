@@ -1,3 +1,5 @@
+import string
+
 def openfile(eenfile):
     file = open(eenfile, 'r')
     leeslines = file.readlines()
