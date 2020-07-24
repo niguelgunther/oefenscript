@@ -1,4 +1,5 @@
 import string
+import csv
 
 def openfile(eenfile):
     file = open(eenfile, 'r')
@@ -11,3 +12,5 @@ for k in range(0,len(t)):
     lijnen = t[k]
     splitlijnen = lijnen.split(';')
     print(splitlijnen)
+
+ 
