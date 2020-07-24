@@ -6,8 +6,14 @@ def readfile(myfile):
     file.close()
     return filelines
 
+art_dict = {}
+
 x = readfile('apotheek_artikelen.csv')
+
 for i in range(0,len(x)):
     regels = x[i]
     splitregels = regels.split(';')
-    print(splitregels)
+    art_dict[splitregels[3]] = []
+
+keylijst = art_dict.keys()
+print(len(keylijst))
