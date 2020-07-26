@@ -12,8 +12,8 @@ x = readfile('apotheek_artikelen.csv')
 
 for i in range(0,len(x)):
     regels = x[i]
-    splitregels = regels.split(';')
+    splitregels = regels.strip().lower().split(';')
     art_dict[splitregels[3]] = []
-
+    
 keylijst = art_dict.keys()
 print(len(keylijst))
